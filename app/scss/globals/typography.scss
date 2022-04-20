@@ -2,9 +2,13 @@
 
 h1,
 h2,
-h3 {
-	margin-top: 0;
-	line-height: 1.1;
+h3,
+h4,
+h5,
+h6 {
+	
+	font-family: var(--headings);
+	color: var(--);
 }
 
 a,
