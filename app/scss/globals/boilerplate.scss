@@ -11,14 +11,16 @@ html {
 *::after {
 	box-sizing: inherit;
 	margin: 0;
-    padding: 0;
+  padding: 0;
 }
 
  body {
-	overflow-x: hidden;
-	background-color: var(--bckground);
-	font-family: var(--font-text);
-	color: var(--color-text);
+   font-family: var(--font-text);
+   color: var(--color-text);
+   font-weight: 400;
+   text-align: center;
+   background-color: var(--bckground);
+   overflow-x: hidden;
  }
 
 /* by default, buttons and inputs don't inherit typographical styles from their parents.
