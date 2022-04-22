@@ -47,6 +47,9 @@ ol[role='list'] {
 li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+}
 
 /* Set core root defaults */
 html:focus-within {

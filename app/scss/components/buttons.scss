@@ -3,25 +3,55 @@
 
 .btn {
     display: inline-block;
-    font-size: 1.5rem;
-    font-family: var(--font-text);
+    font-size: 1.5rem; 
     font-weight: bold;
-    border-radius: 3rem;
+    border-radius: 2.4rem;
     border: 0;
-    cursor: pointer;
     height:4.8rem;
     padding-top:1.6rem;
     padding-bottom: 1.4rem;
-
-    &.schld {
-        text-align: left;
+    cursor: pointer;
+    transition: all 0.5s;
+    
+    &:hover {
+        // filter: drop-shadow(0 0.4rem 0.4rem hsla(0, 0%, 0%, 0.25));
+        filter: drop-shadow(0 0.4rem 0.4rem #333333);
+        transform: translateY(-1.1rem);
     }
 
-    &.abus {
+    &.schld {
+        width: 32.7rem;
+        background-color: var(--dark-pink);
+        color: var(--water-white);
+        padding-left: 5rem;
+        padding-right: 4.6rem;
+        
+        
 
+            @include breakpoint-up(tablet){
+                width: 17.3rem;
+                padding-left: 2.6rem;
+                padding-right: 2.4rem;
+            }
+      
+        }
+
+    &.abus {
+       width: 13.4rem;
+        background-color: var(--about-us-btn);
+        border: 0.1rem solid #FBFCFE;
+        color: var(--water-white);
+        padding-inline: 3.2rem;
+       
+
+        
     }
 
     &.sbmt {
-
+        width: 16.8rem;
+        background-color: var(--white);
+        border: 0.1rem solid var(--san-juan-blue);
+        color: var(--san-juan-blue);
+        padding-inline: 2.8rem;
     }
 }

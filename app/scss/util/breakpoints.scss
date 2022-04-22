@@ -12,7 +12,7 @@ $breakpoints-down: (
 	'tablet': '89.9em',
 );
 
-@mixin breakpoint($size) {
+@mixin breakpoint-up($size) {
 	@media (min-width: map-get($breakpoints-up, $size)) {
 		@content;
 	}
