@@ -14,7 +14,6 @@
     transition: all 0.5s;
     
     &:hover {
-        // filter: drop-shadow(0 0.4rem 0.4rem hsla(0, 0%, 0%, 0.25));
         filter: drop-shadow(0 0.4rem 0.4rem #333333);
         transform: translateY(-1.1rem);
     }
@@ -25,16 +24,13 @@
         color: var(--water-white);
         padding-left: 5rem;
         padding-right: 4.6rem;
-        
-        
-
+           
             @include breakpoint-up(tablet){
                 width: 17.3rem;
                 padding-left: 2.6rem;
                 padding-right: 2.4rem;
             }
-      
-        }
+    }
 
     &.abus {
        width: 13.4rem;
@@ -42,9 +38,6 @@
         border: 0.1rem solid #FBFCFE;
         color: var(--water-white);
         padding-inline: 3.2rem;
-       
-
-        
     }
 
     &.sbmt {
