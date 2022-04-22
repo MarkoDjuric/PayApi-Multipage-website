@@ -19,25 +19,90 @@ a:active {
 
 //---- headings ----\\
 
-.h-1 {
+.h1-lg {
 font-size: 3.6rem;
 line-height: 3.6rem;
- @include breakpoints-up(medium){
-	 
- }
+letter-spacing: -0.025rem;
+	@include breakpoints-up(tablet){
+		font-size: 4.8rem;
+		line-height: 5.6rem;
+		letter-spacing: -0.037rem;
+	}
+	@include breakpoints-up(desktop){
+		font-size: 7.2rem;
+		line-height: 7.2rem;
+		letter-spacing: -0.055rem;
+	}
 }
+.h1-sm {
+	font-size: 3.2rem;
+	line-height: 3.6rem;
+	letter-spacing: -0.025rem;
+		@include breakpoints-up(tablet){
+			font-size: 4.8rem;
+			line-height: 5.6rem;
+			letter-spacing: -0.037rem;
+		}
+		@include breakpoints-up(desktop){
+			font-size: 5.6rem;
+			line-height: 5.6rem;
+			letter-spacing: -0.043rem;
+		}
+	}
 
-.h-2 {
+.h2 {
+	font-size: 3.6rem;
+    line-height: 3.6rem;
+	letter-spacing: -0.028rem;
+	@include breakpoints-up(tablet){
+		font-size: 4.8rem;
+		line-height: 5.6rem;
+		letter-spacing: -0.037rem;
+	}
+}
+.h2-sm {
 	font-size: 3.2rem;
     line-height: 3.6rem;
+	letter-spacing: -0.025rem;
+	@include breakpoints-up(tablet){
+		font-size: 4.8rem;
+		line-height: 5.6rem;
+		letter-spacing: -0.037rem;
+	}
 }
 
-.h-3 {
+.h3 {
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	letter-spacing: -0.018rem;
+	@include breakpoints-up(tablet){
+		line-height: 4rem;
+	}
+	@include breakpoints-up(desktop){
+		letter-spacing: -0.025rem;
+	}
+}
+
+.h3-sm {
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+	letter-spacing: -0.014rem;
+	font-weight: bold;
+	@include breakpoints-up(tablet){
+		line-height: 4rem;
+	}
+	@include breakpoints-up(desktop){
+		letter-spacing: -0.025rem;
+	}
+}
+
+
+.h4 {
 	font-size: 2.4rem;
     line-height: 3.2rem;
+	letter-spacing: -0.018rem;
 }
 
-.h-4 {
-	font-size: 4.8rem;
-    line-height: 5.6rem;
-}
+		
+		
+
