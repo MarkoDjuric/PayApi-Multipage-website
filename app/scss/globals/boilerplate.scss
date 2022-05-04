@@ -23,12 +23,10 @@ html {
    background-color: var(--bckground);
    overflow-x: hidden;
    padding-inline: 2.4rem;
-   @include breakpoint-up(tablet){
-     padding-inline: 4rem;
-   }
 
-  
-   
+    @include breakpoint-up(tablet){
+      padding-inline: 4rem;
+    }  
  }
 
 /* by default, buttons and inputs don't inherit typographical styles from their parents.
