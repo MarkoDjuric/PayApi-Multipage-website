@@ -2,9 +2,20 @@
     position: relative;
     max-width: 111rem;
     border: 1px solid rgb(34, 31, 31);
+    justify-content: space-between;
+    
+    &__nav {
+        justify-content: space-between;
+    }
+
+    .nav__list {
+        gap: 4rem;
+    }
+        
 
 
-    &__hamburger{
+
+    &__hamburger {
         display: block;
         width: 2.8rem;
         background-color: var(--san-juan-blue);
