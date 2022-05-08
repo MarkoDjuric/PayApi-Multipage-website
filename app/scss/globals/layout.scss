@@ -13,9 +13,19 @@
 	display: grid;
 }
 
-.hidden {
-	display: none;
-}
+
 .vissible {
-	display: block;
+	right: -4rem;
+	transform: translateX(-92%);
+
+	
 }
+
+.nav-btn {
+	width: 25rem!important;
+}
+
+
+
+
+

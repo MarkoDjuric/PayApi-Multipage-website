@@ -13,8 +13,6 @@
     
     &__nav {
         justify-content: space-between;
-
-
         transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
         @include breakpoint-up(tablet){
             display: block;
@@ -27,35 +25,39 @@
             font-size: 1.5rem;
             font-weight: bold;
         }
-           
-            
+                      
     }
 
     .nav__list {
         gap: 4rem;
+        
+
+
+
+
+
+
     }
         
     &__toggle {
         // width: 3rem;
-         height: 1.7rem;
+        height: 1.7rem;
         cursor: pointer;
         border: none;
         position:fixed;
         transform: translateX(-100%);
-     
-        transition: all .5s ease-in-out;
-       right: 0;
-       z-index: 1;
+        z-index: 1; 
+        right: 0;
+        background-color: unset;
+  
+       
       
-       transition: transform 300ms cubic-bezier(.5, 0, .5, 1);
+       transition: transform 3ms cubic-bezier(.5, 0, .5, 1);
         @include breakpoint-up(tablet){
             display: none;
         }
         @include breakpoint-down(mobile){
             display: block;
-        }
-        &:hover{
-            background-color: #fff;
         }
     }
 
@@ -65,20 +67,20 @@
         width: 2.8rem;
         height: 0.3rem;
         background: var(--san-juan-blue);
-        transition: transform 350ms ease-in-out, opacity 200ms linear;
-       
+        transition: transform 350ms ease-in-out, opacity 200ms linear;            
       }
 
     .hamburger {
         display: block;
         position: relative;
+        
       }
 
       .hamburger::before,
       .hamburger::after {
         content: '';
         position: absolute;
-        left: 0;
+        left: 0;      
       }
 
 .hamburger::before { bottom: 0.6rem; }
@@ -96,15 +98,16 @@
 
 }
 
-.nav-side {
-   
+.nav-side {   
     height: 100vh;
     background-color:var(--about-us-btn);
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 85%;
-    animation: 3s ease-in 1s  reverse both running slidein;
+    position: fixed;
+    top: 0rem;
+    left: 110%;
+    width: 97.89%;
+    
+    transition: 0.4s;
+   
 }
 
 .nav__sider {
@@ -114,27 +117,39 @@
     color: var(--water-white);
     font-weight: bold;
     padding-top: 13.2rem;
+    margin-right: 7rem;
+    
 
+    &::before {
+        content: "";
+        height: 0.1rem;
+        width: 90%;
+        background-color:#979797;
+        margin-bottom: 4.3rem;
+        margin-top: 2.4rem;
+       
+        
+    }
+
+    .nav_link {
+        color: var(--water-white);
+
+    }
+    
 }
 
 /* Navigation open styles */
-
 .nav-open .nav {
-    transform: translateX(0);
-   
-   
-  z-index: 1;
+  transform: translateX(0);   
+ 
   }
-  
-  /* Change this stuff below */
   
   .nav-open .hamburger {
     transform: rotate(45deg);
     z-index: 1;
   }
   
-  .nav-open .hamburger::before {
-     
+  .nav-open .hamburger::before {    
     opacity: 0;
     z-index: 1;
   }
@@ -142,4 +157,11 @@
   .nav-open .hamburger::after {
     transform: rotate(90deg) translate(-0.6rem);
     
+  }
+
+
+  
+  .nav-open .nav__list {
+    transform: translateX(0);
+    opacity: 1;
   }
