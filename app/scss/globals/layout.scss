@@ -15,14 +15,21 @@
 
 
 .vissible {
-	right: -4rem;
-	transform: translateX(-92%);
 
-	
+	 transform: translateX(17%)!important;	
 }
 
 .nav-btn {
+	@include breakpoint-down(vsmall){
+		width: 20rem!important;
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+
 	width: 25rem!important;
+	@include breakpoint-down(mobile){
+max-width: 25.2rem!important;
+	}
 }
 
 

@@ -9,8 +9,8 @@ let x = true;
   navToggle.addEventListener('click', function() {
 
     document.body.classList.toggle('nav-open');
-    nav.classList.toggle('vissible');
-  
+     nav.classList.toggle('vissible');
+
   
     if (x===true) {
     

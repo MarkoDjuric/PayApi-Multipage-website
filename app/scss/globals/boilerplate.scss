@@ -16,7 +16,7 @@ html {
 }
 
  body {
-   
+  
    font-family: var(--font-text);
    color: var(--color-text);
    font-weight: 400;
@@ -27,7 +27,8 @@ html {
 
     @include breakpoint-up(tablet){
       padding-inline: 4rem;
-    }  
+    } 
+
  }
 
 /* by default, buttons and inputs don't inherit typographical styles from their parents.
@@ -65,18 +66,18 @@ html:focus-within {
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-      scroll-behavior: auto;
-    }
+// @media (prefers-reduced-motion: reduce) {
+//     html:focus-within {
+//       scroll-behavior: auto;
+//     }
   
-    *,
-    *::before,
-    *::after {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
-  }
+//     *,
+//     *::before,
+//     *::after {
+//       animation-duration: 0.01ms !important;
+//       animation-iteration-count: 1 !important;
+//       transition-duration: 0.01ms !important;
+//       scroll-behavior: auto !important;
+//     }
+//   }
 

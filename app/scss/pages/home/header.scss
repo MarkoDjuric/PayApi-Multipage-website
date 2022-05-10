@@ -1,11 +1,33 @@
 @use '../../util'as *;
 
-.header {
-    position: relative;
+.header {  
     max-width: 111rem;    
-    justify-content: space-between;
     align-items: center;
     margin-top: 4rem;
+    
+    &::before {
+        content: url("../assets/shared/desktop/bg-pattern-circle.svg");
+        position:absolute;
+        top: -9.9rem;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);       
+        mix-blend-mode: normal;
+        z-index: 1;
+        @include breakpoint-up(tablet){
+           
+            top: -5.8rem;
+        }
+        @include breakpoint-up(tabletxl){
+            left: 84%;
+            top: 21.8rem;
+        }
+      } 
+
+    &__logo {
+        margin-right: 6.4rem; 
+   
+    
+    }
   
    .nav_wrapper {
        gap: 6.4rem;
@@ -20,27 +42,18 @@
         @include breakpoint-down(mobile){
             display: none;
         }
-
         .nav_link {
             font-size: 1.5rem;
             font-weight: bold;
-        }
-                      
+        }                     
     }
 
     .nav__list {
         gap: 4rem;
-        
-
-
-
-
-
-
     }
-        
+
+//Hamburger btn     
     &__toggle {
-        // width: 3rem;
         height: 1.7rem;
         cursor: pointer;
         border: none;
@@ -48,11 +61,8 @@
         transform: translateX(-100%);
         z-index: 1; 
         right: 0;
-        background-color: unset;
-  
-       
-      
-       transition: transform 3ms cubic-bezier(.5, 0, .5, 1);
+        background-color: unset;      
+        transition: transform 3ms cubic-bezier(.5, 0, .5, 1);
         @include breakpoint-up(tablet){
             display: none;
         }
@@ -72,8 +82,7 @@
 
     .hamburger {
         display: block;
-        position: relative;
-        
+        position: relative;       
       }
 
       .hamburger::before,
@@ -83,31 +92,34 @@
         left: 0;      
       }
 
-.hamburger::before { bottom: 0.6rem; }
-.hamburger::after { top:0.6rem;}
+    .hamburger::before { bottom: 0.6rem;}
+    .hamburger::after { top:0.6rem;}
 
-.a-link {
-
-    @include breakpoint-up(tablet){
-        display: block;
+    .a-link {
+        margin-left: auto;
+        @include breakpoint-up(tablet){
+            display: block;
+        }
+        @include breakpoint-down(mobile){
+            display: none;
+        }
     }
-    @include breakpoint-down(mobile){
-        display: none;
-    }
-}
-
 }
 
 .nav-side {   
     height: 100vh;
     background-color:var(--about-us-btn);
-    position: fixed;
+    position: absolute;
     top: 0rem;
-    left: 110%;
-    width: 97.89%;
-    
-    transition: 0.4s;
-   
+    right: 0;
+    transform: translateX(110%);
+    width: 97vw;
+    display: flex;
+    justify-content: center;
+    transition: 0.4s;  
+    @include breakpoint-up(tablet){
+        display: none;
+    }
 }
 
 .nav__sider {
@@ -117,25 +129,44 @@
     color: var(--water-white);
     font-weight: bold;
     padding-top: 13.2rem;
-    margin-right: 7rem;
-    
-
+    margin-right: 6rem;
+    position: absolute;
+    top: -5rem;
+    @include breakpoint-down(vsmall){
+        top: 4rem;
+    }
+  
     &::before {
         content: "";
         height: 0.1rem;
-        width: 90%;
+
+        @include breakpoint-down(vsmall){
+            display: none;
+        }
+        width: 101%;
+
+        @include breakpoint-up(sm){
+            position: relative;
+            width: 115%; 
+            left: -0.5rem;
+        }
+        @include breakpoint-up(smx){
+            width: 126%;
+        }
+        @include breakpoint-up(smlg){
+            width: 141%;
+        }
+        @include breakpoint-up(smxxlg){
+            width:157% ;
+        }
         background-color:#979797;
         margin-bottom: 4.3rem;
-        margin-top: 2.4rem;
-       
-        
+        margin-top: 2.4rem;        
     }
 
     .nav_link {
         color: var(--water-white);
-
-    }
-    
+    }   
 }
 
 /* Navigation open styles */
@@ -159,9 +190,10 @@
     
   }
 
-
-  
   .nav-open .nav__list {
     transform: translateX(0);
     opacity: 1;
   }
+
+
+

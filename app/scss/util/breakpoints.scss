@@ -1,12 +1,18 @@
 // 640px, 1150px, 1400px
 $breakpoints-up: (
+	'sm': '26em',
+	'smx':'27.25em',
+	'smlg':'30.5em',
+	'smxxlg':'32.8em',
 	'tablet': '48em',  // 768rem / 16 = 48em
+	'tabletxl': '51.25em',
 	'mid': '71.875em',
 	'desktop': '90em',
 );
 
 
 $breakpoints-down: (
+	'vsmall':'23em',
 	'mobile': '47.9em',
 	'tabletsm': '57.4em',
 	'tablet': '89.9em',
@@ -18,15 +24,7 @@ $breakpoints-down: (
 	}
 }
 
-@mixin breakpoint-down($size) {
-
-
-
-
-
-
-
-	
+@mixin breakpoint-down($size) {	
 	@media (max-width: map-get($breakpoints-down, $size)) {
 		@content;
 	}
