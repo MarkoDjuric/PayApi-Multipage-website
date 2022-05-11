@@ -14,7 +14,6 @@
         mix-blend-mode: normal;
         z-index: 1;
         @include breakpoint-up(tablet){
-           
             top: -5.8rem;
         }
         @include breakpoint-up(tabletxl){
@@ -25,9 +24,12 @@
 
     &__logo {
         margin-right: 6.4rem; 
-   
-    
     }
+    .w {
+        max-width: 111rem;
+       
+        }
+    
   
    .nav_wrapper {
        gap: 6.4rem;
@@ -107,13 +109,15 @@
 }
 
 .nav-side {   
-    height: 100vh;
-    background-color:var(--about-us-btn);
-    position: absolute;
+    position: fixed;
     top: 0rem;
     right: 0;
+    height: 100vh;
+    width: 96vw;
+    background-color:var(--about-us-btn);
     transform: translateX(110%);
-    width: 97vw;
+
+   
     display: flex;
     justify-content: center;
     transition: 0.4s;  
@@ -123,6 +127,8 @@
 }
 
 .nav__sider {
+    position: absolute;
+    top: -5rem;
     flex-direction: column;
     gap: 3.2rem;
     font-size: 2rem;
@@ -130,8 +136,6 @@
     font-weight: bold;
     padding-top: 13.2rem;
     margin-right: 6rem;
-    position: absolute;
-    top: -5rem;
     @include breakpoint-down(vsmall){
         top: 4rem;
     }
@@ -139,11 +143,11 @@
     &::before {
         content: "";
         height: 0.1rem;
-
         @include breakpoint-down(vsmall){
             display: none;
         }
-        width: 101%;
+        
+        width: 108%;
 
         @include breakpoint-up(sm){
             position: relative;
@@ -170,10 +174,10 @@
 }
 
 /* Navigation open styles */
-.nav-open .nav {
-  transform: translateX(0);   
+// .nav-open .nav {
+//   transform: translateX(0);   
  
-  }
+//   }
   
   .nav-open .hamburger {
     transform: rotate(45deg);
