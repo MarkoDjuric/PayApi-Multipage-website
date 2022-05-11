@@ -3,12 +3,15 @@
 .header {  
     max-width: 111rem;    
     align-items: center;
-    margin-top: 4rem;
+    padding-top: 4rem;
+    
+    
+  
     
     &::before {
         content: url("../assets/shared/desktop/bg-pattern-circle.svg");
         position:absolute;
-        top: -9.9rem;
+        top: -6.9rem;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);       
         mix-blend-mode: normal;
@@ -59,10 +62,10 @@
         height: 1.7rem;
         cursor: pointer;
         border: none;
-        position:fixed;
-        transform: translateX(-100%);
+       margin-left: auto;
+       
         z-index: 1; 
-        right: 0;
+       
         background-color: unset;      
         transition: transform 3ms cubic-bezier(.5, 0, .5, 1);
         @include breakpoint-up(tablet){

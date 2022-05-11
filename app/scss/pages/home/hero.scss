@@ -1,0 +1,25 @@
+@use '../../util'as *;
+
+.hero {
+    max-width: 111rem;
+    
+ 
+    &__wrapp {
+grid-template-columns: 1fr;
+
+       
+        gap: 2.4rem;
+        
+    }
+    
+
+    
+    &__img{
+      
+     
+        margin-top:-2.4rem;
+        width: 100%;
+        transform: translateX(7%);
+    }
+}
+

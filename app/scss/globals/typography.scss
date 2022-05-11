@@ -41,6 +41,9 @@ letter-spacing: -0.025rem;
 }
 
 .h1-sm {
+	@include breakpoint-down(vsmall){
+		font-size: 2rem;
+	}
 	font-size: 3.2rem;
 	line-height: 3.6rem;
 	letter-spacing: -0.025rem;
