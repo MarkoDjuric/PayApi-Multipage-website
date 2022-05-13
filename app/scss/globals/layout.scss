@@ -1,3 +1,9 @@
+
+
+
+
+
+
 @use '../util' as *;
 
 .container {
@@ -28,10 +34,14 @@
 
 	width: 25rem!important;
 	@include breakpoint-down(mobile){
-max-width: 25.2rem!important;
+       max-width: 25.2rem!important;
 	}
 }
 
+// sections divider class
+.m-btm{
+  margin-bottom: 8rem;
+}
 
 
 

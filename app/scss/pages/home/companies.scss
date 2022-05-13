@@ -2,7 +2,7 @@
 
 .companies {
     position: relative;
-    width: 100%;
+    
     background-color: var(--about-us-btn);
     color: var(--water-white);
     overflow: hidden;
@@ -13,9 +13,11 @@
         @include breakpoint-up(tablet){
             margin-bottom: 2.4rem;
         }
+    }
 
-        
+
     &__wrap {
+        width: 100%;
         max-width: 1111rem;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -29,8 +31,9 @@
             }
             @include breakpoint-up(desktop){
                 grid-template-columns: minmax(1fr,44.5rem) minmax(1fr,53.6rem);
-                column-gap: 3.1rem;
+                
                 row-gap: 0;
+                padding-inline: 16.3rem;
                 .partners {
                     grid-column: 2 / 3;
                     grid-row: 1 / 2;
@@ -70,9 +73,7 @@
 
         .black-btn {
             margin-top: 3.2rem;
-        }
-       
-        
+        }      
     }
 
     &::before {
@@ -91,7 +92,5 @@
         top: 36%;
         }
     
-    }
-
     }
 }
