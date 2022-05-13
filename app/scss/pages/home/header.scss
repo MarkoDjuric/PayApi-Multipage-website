@@ -118,11 +118,10 @@
     width: 96vw;
     background-color:var(--about-us-btn);
     transform: translateX(110%);
-
-   
     display: flex;
     justify-content: center;
-    transition: 0.4s;  
+    transition: 0.4s; 
+    z-index: 1111; 
     @include breakpoint-up(tablet){
         display: none;
     }
@@ -147,10 +146,8 @@
         height: 0.1rem;
         @include breakpoint-down(vsmall){
             display: none;
-        }
-        
+        }       
         width: 108%;
-
         @include breakpoint-up(sm){
             position: relative;
             width: 115%; 
@@ -176,10 +173,7 @@
 }
 
 /* Navigation open styles */
-// .nav-open .nav {
-//   transform: translateX(0);   
- 
-//   }
+
   
   .nav-open .hamburger {
     transform: rotate(45deg);
