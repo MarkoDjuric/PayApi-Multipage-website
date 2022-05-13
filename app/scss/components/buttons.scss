@@ -49,4 +49,12 @@
         color: var(--san-juan-blue);
         padding-inline: 2.8rem;
     }
+
+    &.black-btn {
+        width: 12.9rem;
+        background-color: var(--about-us-btn);
+        border:solid 0.05rem;
+        border-color: var(--white);
+        color: var(--white);
+    }
 }
