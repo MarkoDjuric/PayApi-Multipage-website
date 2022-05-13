@@ -1,0 +1,14 @@
+.companies {
+    position: relative;
+    width: 100%;
+    background-color: var(--about-us-btn);
+    color: var(--water-white);
+    overflow: hidden;
+   
+    &__heading {
+        color: var(--water-white);
+        margin-bottom:1.6rem;
+        @include breakpoint-up(tablet){
+            margin-bottom: 2.4rem;
+        }
+    }
