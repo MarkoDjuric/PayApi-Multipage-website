@@ -42,4 +42,54 @@
             }
     }
 
+    .partners {
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        place-items: center;
+        row-gap:4.4rem;
+        column-gap:4.98rem;
+            @include breakpoint-up(tablet){
+                grid-template-columns: repeat(3,1fr);
+                
+                row-gap:4.6rem;
+                column-gap:6.2rem;
+            }
+
+        .change-my-color {
+            filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(121deg) brightness(105%) contrast(104%);
+        }
+    
     }
+    .companies__text {
+        max-width: 44.5rem;
+        place-self:center;
+
+
+
+        .black-btn {
+            margin-top: 3.2rem;
+        }
+       
+        
+    }
+
+    &::before {
+            content: url(../assets/shared/desktop/bg-pattern-circle.svg);
+            position: absolute;
+            top: -7%;
+            left: -51vw;
+        @include breakpoint-up(tablet){
+            top: 0;
+            left: -2vw;
+        }
+
+        transform: translateY(-69.5%);
+        @include breakpoint-up(desktop){
+            left: -13vw;
+        top: 36%;
+        }
+    
+    }
+
+    }
+}
