@@ -4,14 +4,17 @@
     max-width: 111rem;    
     align-items: center;
     margin-top: 4rem;
-    
+    padding-inline: 2.4rem;
+    @include breakpoint-up(tablet){
+        padding-inline: 4rem;
+      } 
     
   
     
     &::before {
         content: url("../assets/shared/desktop/bg-pattern-circle.svg");
         position:absolute;
-        top: -6.9rem;
+        top: -7.9rem;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);       
         mix-blend-mode: normal;
@@ -32,8 +35,6 @@
         max-width: 111rem;
        
         }
-    
-  
    .nav_wrapper {
        gap: 6.4rem;
    }
@@ -52,7 +53,6 @@
             font-weight: bold;
         }                     
     }
-
     .nav__list {
         gap: 4rem;
     }
@@ -62,11 +62,10 @@
         height: 1.7rem;
         cursor: pointer;
         border: none;
-       margin-left: auto;
-       
-        z-index: 1; 
-       
-        background-color: unset;      
+        margin-left: auto;
+        transform: translateX(-100%);
+        z-index: 11111;     
+        background-color: unset;        
         transition: transform 3ms cubic-bezier(.5, 0, .5, 1);
         @include breakpoint-up(tablet){
             display: none;
@@ -109,7 +108,7 @@
             display: none;
         }
     }
-}
+    }
 
 .nav-side {   
     position: fixed;
