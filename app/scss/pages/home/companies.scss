@@ -11,4 +11,35 @@
         @include breakpoint-up(tablet){
             margin-bottom: 2.4rem;
         }
+
+        
+    &__wrap {
+        max-width: 1111rem;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 5.6rem;
+        padding-block: 8rem;
+        padding-inline: 2.4rem;
+            @include breakpoint-up(tablet){
+                padding-block: 8.8rem;
+                padding-inline: 11.6rem;
+                gap: 6.4rem;
+            }
+            @include breakpoint-up(desktop){
+                grid-template-columns: minmax(1fr,44.5rem) minmax(1fr,53.6rem);
+                column-gap: 3.1rem;
+                row-gap: 0;
+                .partners {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                   align-self: center;
+                    
+                }
+                .companies__text {
+                    grid-column: 1 / 2;
+                    text-align: left;
+                }
+            }
+    }
+
     }
