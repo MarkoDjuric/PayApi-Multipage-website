@@ -1,4 +1,44 @@
 @use '../../util'as *;
 
 
+.banners {
+    max-width: 111.3rem;
+    gap: 4.8rem;
+    padding-inline: 2.3rem;
+    @include breakpoint-up(smxxlg){
+        padding-inline: 11.3rem;
+    }
+    @include breakpoint-up(tablet){
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 1rem;
+        padding-inline: 3.9rem;
+    }
+    @include breakpoint-up(desktop){
+        column-gap: 3rem;
+        padding-inline: 0.9rem;
+    }
 
+  
+    .banner-grid {
+        justify-items: center;
+        align-content: baseline;
+        
+        .banner_img {
+            padding-bottom: 3.2rem;
+        }
+        .banner_heading {
+            font-size: 1.8rem;
+            font-family: 'Public Sans';
+            font-weight: bold;
+            padding-bottom: 1.6rem;
+        }
+    }
+ 
+
+
+
+
+
+
+
+}
