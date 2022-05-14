@@ -1,0 +1,88 @@
+@use '../../util'as *;
+
+.portfolio {
+   
+    max-width: 116.5rem;
+    gap: 6rem;
+    align-items: center;
+
+    &__implement {
+        grid-template-columns: 1fr;
+        @include breakpoint-up(tabletxl){
+            grid-template-columns: 1fr 1fr;
+           
+        }
+        @include breakpoint-up(mid){
+            grid-template-columns: 1.5fr 1fr;
+           
+        }
+        
+
+
+    .implement-img {
+        transform: translateX(3%);
+        @include breakpoint-up(smx){
+            justify-self: center;
+            transform: translateX(5%);
+        }
+        @include breakpoint-up(mid){
+            transform: translateX(-13%);
+            align-self: center;
+            
+        }
+    }    
+
+
+        .implement-text {
+            max-width: 57.3rem;
+            padding-inline: 2.3rem; 
+            place-self: center;
+            justify-self: center;
+            @include breakpoint-up(tabletxl){
+                text-align: left;
+                max-width: 44.5.3rem;
+                padding-right: 2.3rem;
+                padding-left: 0;
+            }
+            @include breakpoint-up(desktop){
+                transform: translateX(-25%);
+            }
+  
+        }
+    }
+
+    &__uiux {
+        max-width: 110.5rem;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        @include breakpoint-up(tabletxl){
+            text-align: left;
+            grid-template-columns: 1fr 1fr;
+            .uiux-img {
+                order: 2;
+            }
+        }
+      
+        
+        .uiux-img{
+            transform: translateX(4%);
+        }
+        .uiux-text {
+            max-width: 57.3rem;
+            padding-inline: 2.3rem;
+            @include breakpoint-up(tabletxl){
+                padding-left: 5.5rem;
+                padding-right: 0;
+            } 
+            @include breakpoint-up(desktop){
+                padding-left: 3.5rem;
+                padding-right: 8rem;
+            } 
+        }
+    }
+.h2 {
+    padding-bottom: 2.4rem;
+}
+    
+}
