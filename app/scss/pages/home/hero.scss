@@ -5,12 +5,12 @@
     justify-content: center;
     align-items: center;
     padding-inline: 2.4rem;
-    @include breakpoint-up(tablet){
-      padding-inline: 4rem;
-    } 
-    @include breakpoint-up(mid){
-        padding-inline: 0;
-    } 
+        @include breakpoint-up(tablet){
+            padding-inline: 4rem;
+        } 
+        @include breakpoint-up(mid){
+            padding-inline: 0;
+        } 
     flex-direction: column;
         @include breakpoint-up(tablet){
             flex-direction: row-reverse;
@@ -33,12 +33,9 @@
 
     &__banner {     
      grid-template-columns: minmax(15rem,54.6rem);
-    
-     gap: 2.4rem;
-     
+     gap: 2.4rem;     
         @include breakpoint-up(tablet){
-            text-align: left;
-            
+            text-align: left;           
         }
         @include breakpoint-up(desktop){
             gap: 4rem;
