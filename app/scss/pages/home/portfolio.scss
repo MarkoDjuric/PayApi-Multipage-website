@@ -14,11 +14,8 @@
         }
         @include breakpoint-up(mid){
             grid-template-columns: 1.5fr 1fr;
-           
         }
-        
-
-
+                   
     .implement-img {
         transform: translateX(3%);
         @include breakpoint-up(smx){
@@ -27,11 +24,9 @@
         }
         @include breakpoint-up(mid){
             transform: translateX(-13%);
-            align-self: center;
-            
+            align-self: center;       
         }
     }    
-
 
         .implement-text {
             max-width: 57.3rem;
