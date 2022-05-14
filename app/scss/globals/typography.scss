@@ -5,7 +5,7 @@ h2,
 h3,
 h4
  {
-	font-family: var(--headings);
+	font-family: var(--font-headings);
 	color: var(--san-juan-blue);
 }
 
@@ -33,10 +33,10 @@ letter-spacing: -0.025rem;
 		line-height: 5.6rem;
 		letter-spacing: -0.037rem;
 	}
-	@include breakpoint-up(desktop){
+	@include breakpoint-up(mid){
 		font-size: 7.2rem;
 		line-height: 7.2rem;
-		letter-spacing: -0.055rem;
+		letter-spacing: -0.1rem;
 	}
 }
 

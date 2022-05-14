@@ -1,8 +1,7 @@
 @use '../../util' as *;
 
 .companies {
-    position: relative;
-    
+    position: relative; 
     background-color: var(--about-us-btn);
     color: var(--water-white);
     overflow: hidden;
@@ -89,7 +88,7 @@
         transform: translateY(-69.5%);
         @include breakpoint-up(desktop){
             left: -13vw;
-        top: 36%;
+            top: 36%;
         }
     
     }

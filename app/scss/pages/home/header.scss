@@ -1,15 +1,13 @@
 @use '../../util'as *;
 
 .header {  
-    max-width: 111rem;    
+    max-width: 119rem;    
     align-items: center;
     margin-top: 4rem;
     padding-inline: 2.4rem;
     @include breakpoint-up(tablet){
         padding-inline: 4rem;
-      } 
-    
-  
+    } 
     
     &::before {
         content: url("../assets/shared/desktop/bg-pattern-circle.svg");
@@ -101,6 +99,7 @@
 
     .a-link {
         margin-left: auto;
+        z-index: 11;
         @include breakpoint-up(tablet){
             display: block;
         }

@@ -8,6 +8,9 @@
     @include breakpoint-up(tablet){
       padding-inline: 4rem;
     } 
+    @include breakpoint-up(mid){
+        padding-inline: 0;
+    } 
     flex-direction: column;
         @include breakpoint-up(tablet){
             flex-direction: row-reverse;
