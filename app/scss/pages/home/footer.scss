@@ -2,5 +2,63 @@
 
 .footer {
     background-color: var(--about-us-btn);
-    
+
+    &__container {
+      
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        @include breakpoint-up(tablet){
+            grid-template-columns: max-content repeat(2, 1fr);
+            padding: 3.2rem 0 2.6rem 0;      
+            column-gap: 6.4rem;
+            justify-items: unset;
+            align-items: center;
+            padding-inline: 4rem;
+        }
+        @include breakpoint-up(desktop){
+            padding-inline: 16.5rem;
+        }
+    }
+
+    &__nav-list {
+       
+        flex-flow: column;
+        gap: 3.1rem;
+        text-align: center;
+        justify-content: center;
+        @include breakpoint-up(tablet){
+            flex-flow: row;
+            gap: 4rem;
+            justify-content: unset;
+        }
+             
+    }
+
+    img{
+        display:unset;
+        padding-bottom: 4rem;
+        padding-top: 4.1rem;
+        filter: invert(95%) sepia(95%) saturate(0) hue-rotate(121deg) brightness(105%) contrast(104%);
+    }
+
+
+    &__nav-link {
+        font-size: 1.5rem;
+        color: var(--water-white);
+    }
+
+    &__socials {
+        display: flex;
+        justify-self: center;
+        gap: 2.4rem;
+        margin-top: 4rem;
+        padding-bottom: 5.7rem;
+        @include breakpoint-up(tablet){
+            justify-self: right;
+            margin-top:0;
+            padding-bottom:0;
+        }
+
+    }
 }

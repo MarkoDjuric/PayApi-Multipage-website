@@ -23,7 +23,8 @@ html {
    text-align: center;
    background-color: var(--bckground);
    overflow-x: hidden;
-   padding-inline: 0.9vw;
+
+  //  padding-inline: 0.9vw;
 
 
  }
@@ -31,7 +32,6 @@ html {
 /* by default, buttons and inputs don't inherit typographical styles from their parents.
 Instead, they have their own weird styles. */
 img, picture, video, canvas, svg {
-	display: block;
 	max-width: 100%;
   }
 
