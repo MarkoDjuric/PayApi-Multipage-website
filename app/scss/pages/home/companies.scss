@@ -1,6 +1,9 @@
 @use '../../util' as *;
 
 .companies {
+   
+   
+   max-width: 2000rem;
     position: relative; 
     background-color: var(--about-us-btn);
     color: var(--water-white);
@@ -16,10 +19,9 @@
 
 
     &__wrap {
-        width: 100%;
-        max-width: 1111rem;
+        max-width: 144rem;
         grid-template-columns: 1fr;
-        justify-content: center;
+        
         gap: 5.6rem;
         padding-block: 8rem;
         padding-inline: 2.4rem;
@@ -28,8 +30,9 @@
                 padding-inline: 11.6rem;
                 gap: 6.4rem;
             }
-            @include breakpoint-up(desktop){
-                grid-template-columns: minmax(1fr,44.5rem) minmax(1fr,53.6rem);
+            @include breakpoint-up(midsm){
+                // grid-template-columns: minmax(1fr,44.5rem) minmax(1fr,53.6rem);
+                grid-template-columns: 1fr 1fr;
                 
                 row-gap: 0;
                 padding-inline: 16.3rem;
@@ -44,6 +47,23 @@
                     text-align: left;
                 }
             }
+            &::before {
+                content: url(../assets/shared/desktop/bg-pattern-circle.svg);
+                position: absolute;
+                top: -7%;
+                left: -51vw;
+            @include breakpoint-up(tablet){
+                top: 0;
+                left: -2vw;
+            }
+    
+            transform: translateY(-69.5%);
+            @include breakpoint-up(tabletxl){
+                left: -13vw;
+                top: 36%;
+            }
+        
+        }
     }
 
     .partners {
@@ -75,21 +95,21 @@
         }      
     }
 
-    &::before {
-            content: url(../assets/shared/desktop/bg-pattern-circle.svg);
-            position: absolute;
-            top: -7%;
-            left: -51vw;
-        @include breakpoint-up(tablet){
-            top: 0;
-            left: -2vw;
-        }
+    // &::before {
+    //         content: url(../assets/shared/desktop/bg-pattern-circle.svg);
+    //         position: absolute;
+    //         top: -7%;
+    //         left: -51vw;
+    //     @include breakpoint-up(tablet){
+    //         top: 0;
+    //         left: -2vw;
+    //     }
 
-        transform: translateY(-69.5%);
-        @include breakpoint-up(desktop){
-            left: -13vw;
-            top: 36%;
-        }
+    //     transform: translateY(-69.5%);
+    //     @include breakpoint-up(desktop){
+    //         left: -13vw;
+    //         top: 36%;
+    //     }
     
-    }
+    // }
 }
