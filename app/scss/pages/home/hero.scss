@@ -32,14 +32,14 @@
     }
 
     &__banner {     
-     grid-template-columns: minmax(15rem,54.6rem);
-     gap: 2.4rem;     
-        @include breakpoint-up(tablet){
-            text-align: left;           
-        }
-        @include breakpoint-up(desktop){
-            gap: 4rem;
-        }
+        grid-template-columns: minmax(15rem,54.6rem);
+        gap: 2.4rem;     
+            @include breakpoint-up(tablet){
+                text-align: left;           
+            }
+            @include breakpoint-up(desktop){
+                gap: 4rem;
+            }
     }
 
     .dwnmob {  
@@ -112,8 +112,6 @@
             margin-top: -1.6rem;
             padding-left: 2.7rem;
             cursor: pointer;
-            
-  
             }
         }
     }

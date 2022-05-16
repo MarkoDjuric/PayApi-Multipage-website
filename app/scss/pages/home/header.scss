@@ -30,8 +30,7 @@
         margin-right: 6.4rem; 
     }
     .w {
-        max-width: 111rem;
-       
+        max-width: 111rem;    
         }
    .nav_wrapper {
        gap: 6.4rem;
@@ -49,6 +48,13 @@
         .nav_link {
             font-size: 1.5rem;
             font-weight: bold;
+            opacity: 70%;
+            position: relative;
+            z-index: 1111;
+            &:hover{
+                opacity:unset;
+
+            }
         }                     
     }
     .nav__list {
