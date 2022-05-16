@@ -25,6 +25,14 @@
         
         .banner_img {
             padding-bottom: 3.2rem;
+            cursor: pointer;
+            transition: transform 1.3s;
+            &:hover{
+
+                //  transform: rotateY(45deg);
+                transform: rotate(360deg) translateZ(0);
+             
+            }
         }
         .banner_heading {
             font-size: 1.8rem;

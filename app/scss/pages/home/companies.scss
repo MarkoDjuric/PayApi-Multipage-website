@@ -1,9 +1,8 @@
 @use '../../util' as *;
 
 .companies {
-   
-   
-   max-width: 2000rem;
+     
+    max-width: 2000rem;
     position: relative; 
     background-color: var(--about-us-btn);
     color: var(--water-white);
@@ -17,11 +16,9 @@
         }
     }
 
-
     &__wrap {
         max-width: 144rem;
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 1fr;    
         gap: 5.6rem;
         padding-block: 8rem;
         padding-inline: 2.4rem;
@@ -38,7 +35,7 @@
                 .partners {
                     grid-column: 2 / 3;
                     grid-row: 1 / 2;
-                   align-self: center;
+                    align-self: center;
                     
                 }
                 .companies__text {
@@ -71,8 +68,7 @@
         row-gap:4.4rem;
         column-gap:4.98rem;
             @include breakpoint-up(tablet){
-                grid-template-columns: repeat(3,1fr);
-                
+                grid-template-columns: repeat(3,1fr);             
                 row-gap:4.6rem;
                 column-gap:6.2rem;
             }

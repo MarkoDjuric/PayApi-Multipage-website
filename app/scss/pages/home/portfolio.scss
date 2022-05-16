@@ -48,9 +48,18 @@
 
     &__uiux {
         max-width: 110.5rem;
+        position: relative;
         grid-template-columns: 1fr;
         justify-items: center;
         align-items: center;
+        @include breakpoint-up(desktop){
+            &:before {
+                content: url(../assets/shared/desktop/bg-pattern-circle.svg);
+                position:absolute;
+                left:91.5rem;
+                top: -40%;
+            }
+        }
         @include breakpoint-up(tabletxl){
             text-align: left;
             grid-template-columns: 1fr 1fr;
@@ -58,8 +67,11 @@
                 order: 2;
             }
         }
-      
-        
+        @include breakpoint-up(desktop){
+            gap: 1rem;
+            
+        }
+            
         .uiux-img{
             transform: translateX(4%);
         }
@@ -72,7 +84,7 @@
             } 
             @include breakpoint-up(desktop){
                 padding-left: 3.5rem;
-                padding-right: 8rem;
+                padding-right: 0;
             } 
         }
     }
