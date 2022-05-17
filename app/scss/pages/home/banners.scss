@@ -2,7 +2,7 @@
 
 
 .banners {
-    max-width: 111.3rem;
+    max-width: 119rem;
     gap: 4.8rem;
     padding-inline: 2.3rem;
     @include breakpoint-up(smxxlg){
@@ -18,7 +18,6 @@
         padding-inline: 0.9rem;
     }
 
-  
     .banner-grid {
         justify-items: center;
         align-content: baseline;

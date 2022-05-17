@@ -2,27 +2,29 @@
 
 .footer {
     background-color: var(--about-us-btn);
+    overflow:hidden;
 
     &__container {
-      
+        align-items: center;
+        max-width: 119rem;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
         @include breakpoint-up(tablet){
-            grid-template-columns: max-content repeat(2, 1fr);
-            padding: 3.2rem 0 2.6rem 0;      
+            grid-template-columns: max-content repeat(2, 1fr);       
             column-gap: 6.4rem;
             justify-items: unset;
             align-items: center;
-            padding-inline: 4rem;
+            padding-inline: 3.9rem;
         }
         @include breakpoint-up(desktop){
-            padding-inline: 16.5rem;
+            padding-inline: 0;
+            
+      
         }
     }
 
     &__nav-list {
-       
         flex-flow: column;
         gap: 3.1rem;
         text-align: center;
@@ -31,8 +33,7 @@
             flex-flow: row;
             gap: 4rem;
             justify-content: unset;
-        }
-             
+        }            
     }
 
     img{
@@ -40,8 +41,6 @@
         padding-bottom: 4rem;
         padding-top: 4.1rem;
         filter: invert(95%) sepia(95%) saturate(0) hue-rotate(121deg) brightness(105%) contrast(104%);
-       
-  
     }
 
 
@@ -56,10 +55,53 @@
         gap: 2.4rem;
         margin-top: 4rem;
         padding-bottom: 5.7rem;
+        position: relative;
+            &:before {
+                content: url(../assets/shared/desktop/bg-pattern-circle.svg);
+                position: absolute;
+                transform: translateX(-50%);
+                 top: -123%;
+                 left: -87vw;
+                 opacity:0.7;
+                 animation: scaleIn 5s infinite cubic-bezier(.36, .11, .89, .32);       
+                     @include breakpoint-up(tablet){
+                         // top: 0;
+                         left: -2vw;
+                     }  
+                     transform: translateY(-69.5%);
+                     @include breakpoint-up(tabletxl){
+                         // left: -13vw;
+                         // top: 36%;
+                         left: -38vw;
+                         top: -72%;
+                     }
+                     @include breakpoint-up(desktop){
+                         // left: -13vw;
+                         // top: 36%;
+                         // left: -38vw;
+                         // top: -72%;
+                         left: -3vw;
+                         top: -89%;
+                     }
+                 
+                     @keyframes scaleIn {
+                         from {
+                             transform: scale(.5, .5);
+                             opacity: 1;
+                         
+                         }
+                         to {
+                             transform: scale(2.5 , 2.5);
+                             opacity: 4.5;
+                             
+                         }
+                     }
+            }
         @include breakpoint-up(tablet){
             justify-self: right;
             margin-top:0;
             padding-bottom:0;
+            margin-right: initial;
         }
 
 

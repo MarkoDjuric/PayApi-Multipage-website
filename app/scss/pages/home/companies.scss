@@ -2,7 +2,7 @@
 
 .companies {
      
-    max-width: 2000rem;
+      
     position: relative; 
     background-color: var(--about-us-btn);
     color: var(--water-white);
@@ -35,29 +35,46 @@
                 .partners {
                     grid-column: 2 / 3;
                     grid-row: 1 / 2;
-                    align-self: center;
-                    
+                    align-self: center;    
                 }
                 .companies__text {
                     grid-column: 1 / 2;
                     text-align: left;
                 }
             }
+
             &::before {
                 content: url(../assets/shared/desktop/bg-pattern-circle.svg);
                 position: absolute;
-                top: -7%;
+                top: -59%;
                 left: -51vw;
-            @include breakpoint-up(tablet){
-                top: 0;
-                left: -2vw;
-            }  
-            transform: translateY(-69.5%);
-            @include breakpoint-up(tabletxl){
-                left: -13vw;
-                top: 36%;
-            }
-        
+                opacity:0.7;
+                animation: scaleIn 5s infinite cubic-bezier(.36, .11, .89, .32);       
+                    @include breakpoint-up(tablet){
+                        left: -2vw;
+                    }  
+                    transform: translateY(-69.5%);
+                    @include breakpoint-up(tabletxl){
+                        left: -38vw;
+                        top: -72%;
+                    }
+                    @include breakpoint-up(desktop){
+                        left: -3vw;
+                        top: -89%;
+                    }
+                
+                    @keyframes scaleIn {
+                        from {
+                            transform: scale(.5, .5);
+                            opacity: 1;
+                        
+                        }
+                        to {
+                            transform: scale(2.5 , 2.5);
+                            opacity: 4.5;
+                            
+                        }
+                    }
         }
     }
 
@@ -74,15 +91,16 @@
             }
 
         .change-my-color {
-            filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(121deg) brightness(105%) contrast(104%);
+             filter: invert(95%) sepia(95%) saturate(0%) hue-rotate(121deg) brightness(105%) contrast(104%);  
+                &:hover{    
+                    filter: invert(17%) sepia(48%) saturate(4474%) hue-rotate(315deg) brightness(82%) contrast(102%);
+                }    
         }
     
-    }
+     }
     .companies__text {
         max-width: 44.5rem;
         place-self:center;
-
-
 
         .black-btn {
             margin-top: 3.2rem;
@@ -95,21 +113,4 @@
         }      
     }
 
-    // &::before {
-    //         content: url(../assets/shared/desktop/bg-pattern-circle.svg);
-    //         position: absolute;
-    //         top: -7%;
-    //         left: -51vw;
-    //     @include breakpoint-up(tablet){
-    //         top: 0;
-    //         left: -2vw;
-    //     }
-
-    //     transform: translateY(-69.5%);
-    //     @include breakpoint-up(desktop){
-    //         left: -13vw;
-    //         top: 36%;
-    //     }
-    
-    // }
 }
