@@ -11,4 +11,5 @@ The challenge is to build out this multi-page website and get it looking as clos
 * SCSS :ballot_box_with_check:
 * CSS Grid :ballot_box_with_check:
 * CSS Flexbox :ballot_box_with_check:
+* CSS Animations :ballot_box_with_check:
 * Pixel perfect :ballot_box_with_check:
