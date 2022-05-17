@@ -1,7 +1,7 @@
 @use '../../util'as *;
 
 .hero {
-    max-width: 111rem;
+    // max-width: 111rem;
     justify-content: center;
     align-items: center;
     padding-inline: 2.4rem;
@@ -11,10 +11,17 @@
         @include breakpoint-up(mid){
             padding-inline: 0;
         } 
+        @include breakpoint-up(desktop){
+            padding-inline: 16.5rem;
+        }
     flex-direction: column;
         @include breakpoint-up(tablet){
             flex-direction: row-reverse;
-            justify-content: space-between;
+            // justify-content: space-between;
+        }
+        @include breakpoint-up(desktop){
+         
+             justify-content: space-between;
         }
     
     &__wrapp {

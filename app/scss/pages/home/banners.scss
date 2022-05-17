@@ -2,7 +2,7 @@
 
 
 .banners {
-    max-width: 119rem;
+    // max-width: 119rem;
     gap: 4.8rem;
     padding-inline: 2.3rem;
     @include breakpoint-up(smxxlg){
@@ -15,7 +15,8 @@
     }
     @include breakpoint-up(desktop){
         column-gap: 3rem;
-        padding-inline: 0.9rem;
+        // padding-inline: 0.9rem;
+        padding-inline: 16.5rem;
     }
 
     .banner-grid {

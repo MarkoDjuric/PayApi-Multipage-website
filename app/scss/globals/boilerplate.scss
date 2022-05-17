@@ -5,7 +5,8 @@ html {
 	font-size: 62.5%;
 	box-sizing: border-box;
   scroll-behavior: smooth;
-  max-height: 117rem;
+  scroll-behavior: ;
+ 
 }
 
 *,
@@ -17,17 +18,22 @@ html {
 }
 
  body {
-
+  height: 100%;
+  max-width: 100%;
+position: relative;
    font-family: var(--font-text);
    color: var(--color-text);
    font-weight: 400;
    text-align: center;
    background-color: var(--bckground);
    overflow-x: hidden;
- 
+//    body>* {
+//     padding: 0 9vw;
+    
+// }
    
 
-  //  padding-inline: 0.9vw;
+
 
 
  }

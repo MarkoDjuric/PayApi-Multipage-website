@@ -1,12 +1,12 @@
 @use '../../util' as *;
 
 .companies {
-     
-      
+    width: calc(100% + 4vw);
     position: relative; 
     background-color: var(--about-us-btn);
     color: var(--water-white);
     overflow: hidden;
+
    
     &__heading {
         color: var(--water-white);
@@ -17,21 +17,19 @@
     }
 
     &__wrap {
-        max-width: 144rem;
+        //  max-width: 144rem;
         grid-template-columns: 1fr;    
         gap: 5.6rem;
-        padding-block: 8rem;
-        padding-inline: 2.4rem;
+
             @include breakpoint-up(tablet){
-                padding-block: 8.8rem;
-                padding-inline: 11.6rem;
+        
                 gap: 6.4rem;
             }
             @include breakpoint-up(midsm){
                 // grid-template-columns: minmax(1fr,44.5rem) minmax(1fr,53.6rem);
                 grid-template-columns: 1fr 1fr;               
                 row-gap: 0;
-                padding-inline: 16.3rem;
+        
                 .partners {
                     grid-column: 2 / 3;
                     grid-row: 1 / 2;
@@ -40,6 +38,10 @@
                 .companies__text {
                     grid-column: 1 / 2;
                     text-align: left;
+                }
+                @include breakpoint-up(desktop){
+                    padding-left: 5.3rem;
+                    padding-right: 16.3rem;
                 }
             }
 

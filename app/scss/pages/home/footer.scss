@@ -3,10 +3,13 @@
 .footer {
     background-color: var(--about-us-btn);
     overflow:hidden;
-
+    width: 100%;
+   
+   
+  
     &__container {
         align-items: center;
-        max-width: 119rem;
+        // max-width: 119rem;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -18,7 +21,7 @@
             padding-inline: 3.9rem;
         }
         @include breakpoint-up(desktop){
-            padding-inline: 0;
+            padding-inline: 16.5rem;
             
       
         }

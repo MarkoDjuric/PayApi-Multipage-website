@@ -1,11 +1,13 @@
 @use '../../util'as *;
 
 .portfolio {
-   
-    max-width: 116.5rem;
+    // max-width: 101.5rem;
     gap: 6rem;
     align-items: center;
-
+    padding-inline: 4rem;
+    @include breakpoint-up(desktop){
+        padding-inline: 16.5rem;
+    }
     &__implement {
         grid-template-columns: 1fr;
         @include breakpoint-up(tabletxl){
@@ -13,8 +15,9 @@
            
         }
         @include breakpoint-up(mid){
-            grid-template-columns: 1.5fr 1fr;
+            grid-template-columns: 1.3fr 1fr;
         }
+
                    
     .implement-img {
         transform: translateX(3%);
