@@ -1,6 +1,7 @@
 @use '../../util'as *;
 
 .hero {
+    // width:100%;
     // max-width: 111rem;
     justify-content: center;
     align-items: center;
@@ -9,7 +10,8 @@
             padding-inline: 4rem;
         } 
         @include breakpoint-up(mid){
-            padding-inline: 0;
+            
+            justify-content: space-between;
         } 
         @include breakpoint-up(desktop){
             padding-inline: 16.5rem;

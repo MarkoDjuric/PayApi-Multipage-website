@@ -15,7 +15,10 @@
            
         }
         @include breakpoint-up(mid){
-            grid-template-columns: 1.3fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        @include breakpoint-up(desktop){
+            grid-template-columns: 1fr 1fr;
         }
 
                    
@@ -26,31 +29,36 @@
             transform: translateX(5%);
         }
         @include breakpoint-up(mid){
-            transform: translateX(-13%);
+            transform: translateX(-10%);
             align-self: center;       
+        }
+        @include breakpoint-up(desktop){
+            justify-self:unset;
         }
     }    
 
         .implement-text {
-            max-width: 57.3rem;
+             max-width: 44.5rem;
             padding-inline: 2.3rem; 
             place-self: center;
             justify-self: center;
             @include breakpoint-up(tabletxl){
                 text-align: left;
-                max-width: 44.5.3rem;
+                // max-width: 44.5.3rem;
                 padding-right: 2.3rem;
                 padding-left: 0;
             }
-            @include breakpoint-up(desktop){
-                transform: translateX(-25%);
+            @include breakpoint-up(mid){
+                grid-column: 2 / 3;
+                justify-self: unset;
             }
+   
   
         }
     }
 
     &__uiux {
-        max-width: 110.5rem;
+        // max-width: 110.5rem;
         position: relative;
         grid-template-columns: 1fr;
         justify-items: center;
@@ -59,8 +67,9 @@
             &:before {
                 content: url(../assets/shared/desktop/bg-pattern-circle.svg);
                 position:absolute;
-                left:91.5rem;
-                top: -40%;
+                // left:91.5rem;
+                left: 63.4vw;
+                top: -12vh;
             }
         }
         @include breakpoint-up(tabletxl){
@@ -77,6 +86,7 @@
             
         .uiux-img{
             transform: translateX(4%);
+            
         }
         .uiux-text {
             max-width: 57.3rem;

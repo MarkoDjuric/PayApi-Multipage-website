@@ -1,11 +1,11 @@
 @use '../../util'as *;
 
 .cta {
-        // max-width: 119rem;
+         max-width: 144rem;
         justify-content: center;
         align-items: center;
         padding-inline: 2.4rem;   
-        grid-template-columns: minmax(15rem,64.6rem);
+        grid-template-columns: minmax(15rem,44.5rem);
         gap: 2.4rem;     
            @include breakpoint-up(tablet){
                text-align: left;           
@@ -52,9 +52,9 @@
            }
            
            h3 {
-               max-width: 54.6rem;
+            //    max-width: 54.6rem;
                justify-self: center;
-               text-align: center;
+            //    text-align: center;
                @include breakpoint-up(desktop){
                 text-align: left;
                 justify-self: left;
@@ -73,24 +73,27 @@
            
                @include breakpoint-up(tablet){
                    display: flex;
-                  
+             
    
                    .mailfld {
-                       width: 69%; 
-                       left: 4rem;
+                    //    width: 69%; 
+                    //    left: 4rem;
+                    left: -2rem;
+                    width: 86%;
                        @include breakpoint-up(desktop){
-                           left: 23rem;        
+                           left: 35%;        
                         }
 
                    }
                    .dwnmob {
                        position: absolute;
                        flex: 0;
-                       right: 22%;
-                       width: 27.7%;
+                       right: 4%;
+                       width: 40.7%;
                        @include breakpoint-up(desktop) {
-                           right: 0;
-                       }                      
+                            right: 0;
+                            width: 25.5%;
+                        }                      
                    }
                }
    

@@ -5,7 +5,10 @@ html {
 	font-size: 62.5%;
 	box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-behavior: ;
+  margin: 0;
+  padding:0;
+ 
+  
  
 }
 
@@ -18,15 +21,19 @@ html {
 }
 
  body {
-  height: 100%;
-  max-width: 100%;
-position: relative;
+   position: relative;
+   height: 100%;
+   width:100vw;
+   max-width: 200rem;
+   touch-action: pan-y;
    font-family: var(--font-text);
    color: var(--color-text);
    font-weight: 400;
    text-align: center;
    background-color: var(--bckground);
    overflow-x: hidden;
+   min-height: 100vh;
+   
 //    body>* {
 //     padding: 0 9vw;
     
@@ -74,18 +81,18 @@ html:focus-within {
 }
 
  //Remove all animations, transitions and smooth scroll for people that prefer not to see them */
- @media (prefers-reduced-motion: reduce) {
-   html:focus-within {
-      scroll-behavior: auto;
-    }
+//  @media (prefers-reduced-motion: reduce) {
+//    html:focus-within {
+//       scroll-behavior: auto;
+//     }
   
-    *,
-     *::before,
-    *::after {
-       animation-duration: 0.01ms !important;
-       animation-iteration-count: 1 !important;
-       transition-duration: 0.01ms !important;
-       scroll-behavior: auto !important;
-     }
-   }
+//     *,
+//      *::before,
+//     *::after {
+//        animation-duration: 0.01ms !important;
+//        animation-iteration-count: 1 !important;
+//        transition-duration: 0.01ms !important;
+//        scroll-behavior: auto !important;
+//      }
+//    }
 

@@ -1,13 +1,21 @@
 @use '../../util' as *;
 
 .companies {
-    width: calc(100% + 4vw);
+    
+    padding-block: 10rem;
     position: relative; 
     background-color: var(--about-us-btn);
     color: var(--water-white);
     overflow: hidden;
-
-   
+    @include breakpoint-up(tablet){
+        padding-inline: 4rem;
+        // padding-right: 16.5rem;
+    }
+    @include breakpoint-up(desktop){
+        padding-left: 16.5rem;
+        padding-right: 16.3rem;
+    }
+  
     &__heading {
         color: var(--water-white);
         margin-bottom:1.6rem;
@@ -25,7 +33,7 @@
         
                 gap: 6.4rem;
             }
-            @include breakpoint-up(midsm){
+            @include breakpoint-up(mid){
                 // grid-template-columns: minmax(1fr,44.5rem) minmax(1fr,53.6rem);
                 grid-template-columns: 1fr 1fr;               
                 row-gap: 0;
@@ -39,10 +47,10 @@
                     grid-column: 1 / 2;
                     text-align: left;
                 }
-                @include breakpoint-up(desktop){
-                    padding-left: 5.3rem;
-                    padding-right: 16.3rem;
-                }
+
+            }
+            @include breakpoint-up(desktop){
+                column-gap: unset;
             }
 
             &::before {
@@ -103,7 +111,9 @@
     .companies__text {
         max-width: 44.5rem;
         place-self:center;
-
+        @include breakpoint-up(mid){
+            place-self: unset;
+        }
         .black-btn {
             margin-top: 3.2rem;
             z-index: 99;

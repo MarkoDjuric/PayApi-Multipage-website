@@ -4,7 +4,10 @@
     background-color: var(--about-us-btn);
     overflow:hidden;
     width: 100%;
-   
+    // position: fixed;
+    // bottom:0;
+    // left: 0;
+
    
   
     &__container {
@@ -85,6 +88,7 @@
                          // top: -72%;
                          left: -3vw;
                          top: -89%;
+                         
                      }
                  
                      @keyframes scaleIn {

@@ -1,12 +1,14 @@
 @use '../../util'as *;
 
 .header {  
-    // max-width: 119rem;    
+    // max-width: 119rem; 
+    max-width: 190rem;   
     align-items: center;
     margin-top: 4rem;
     padding-inline: 2.4rem;
     @include breakpoint-up(tablet){
-        padding-inline: 4rem;
+         padding-inline: 4rem;
+       
     } 
     @include breakpoint-up(desktop){
         padding-inline: 16.5rem;
