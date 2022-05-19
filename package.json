@@ -23,5 +23,11 @@
     "last 1 version",
     "IE 11",
     "> 1%"
-  ]
+  ],
+
+  "scripts": {
+    "build": "[my-framework] build --output public"
+  }
 }
+
+
