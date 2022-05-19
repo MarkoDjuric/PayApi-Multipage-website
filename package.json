@@ -18,11 +18,14 @@
     "gulp-terser": "^2.0.1",
     "postcss": "^8.3.5",
     "sass": "^1.35.2",
-    "build": "[my-framework] build --output public"
+    "scripts": {
+      "build": "[my-framework] build --output public"
+    }
   },
   "browserslist": [
     "last 1 version",
     "IE 11",
     "> 1%"
   ]
+
 }
