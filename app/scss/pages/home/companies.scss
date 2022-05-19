@@ -29,8 +29,7 @@
         grid-template-columns: 1fr;    
         gap: 5.6rem;
 
-            @include breakpoint-up(tablet){
-        
+            @include breakpoint-up(tablet){   
                 gap: 6.4rem;
             }
             @include breakpoint-up(mid){

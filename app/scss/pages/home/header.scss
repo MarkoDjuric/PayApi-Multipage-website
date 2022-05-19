@@ -8,7 +8,6 @@
     padding-inline: 2.4rem;
     @include breakpoint-up(tablet){
          padding-inline: 4rem;
-       
     } 
     @include breakpoint-up(desktop){
         padding-inline: 16.5rem;
@@ -21,7 +20,7 @@
         left: 50%;
         transform: translateX(-50%) translateY(-50%);       
         mix-blend-mode: normal;
-        z-index: 1;
+        z-index: -1;
         @include breakpoint-up(tablet){
             top: -5.8rem;
         }
