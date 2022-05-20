@@ -1,19 +1,30 @@
 @use '../../util'as *;
-// left: 111%;
-// mix-blend-mode: normal;
-// position: absolute;
-// top: -27.9rem;
-.header {
-    &:before {
-        left: 109vw;
-        top: -23.9rem;
+
+// new style with no overriding existing class
+%psc{
+	left: 109vw;
+	top: -23.9rem;
+@include breakpoint-up(tablet){
+	top: -7.9rem;
+}
+@include breakpoint-up(desktop){
+	top: -14.9rem;
+	left: 80vw;
+}
+
+
+}
+.header--serious {
+    padding-bottom: 4.8rem;
     @include breakpoint-up(tablet){
-        top: -7.9rem;
+        padding-bottom: 7.5rem;
     }
     @include breakpoint-up(desktop){
-        top: -14.9rem;
-        left: 80vw;
+        padding-bottom: 8.2rem;
+    }
+    &:before{
+    @extend%psc
     }
 
-    }
+    
 }
