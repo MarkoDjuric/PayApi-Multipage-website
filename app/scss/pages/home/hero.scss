@@ -16,7 +16,7 @@
         @include breakpoint-up(desktop){
             padding-inline: 16.5rem;
         }
-    flex-direction: column;
+           flex-direction: column;
         @include breakpoint-up(tablet){
             flex-direction: row-reverse;
             // justify-content: space-between;

@@ -7,10 +7,7 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding:0;
-  overflow-x: hidden;
- 
-  
- 
+  overflow-x: hidden; 
 }
 
 *,
@@ -22,10 +19,11 @@ html {
 }
 
  body {
+   max-width: 190rem;
+   margin: 0 auto;
    position: relative;
    height: 100%;
-   width:100vw;
-   max-width: 200rem;
+  //  width:100vw;
    touch-action: pan-y;
    font-family: var(--font-text);
    color: var(--color-text);
@@ -34,17 +32,11 @@ html {
    background-color: var(--bckground);
    overflow-x: hidden;
    min-height: 100vh;
-   
-//    body>* {
-//     padding: 0 9vw;
-    
-// }
-   
-
-
-
-
+  //  right: -13vw;\
  }
+//  body >*{
+//   padding: 0.9vw;
+//  }
 
 /* by default, buttons and inputs don't inherit typographical styles from their parents.
 Instead, they have their own weird styles. */

@@ -44,11 +44,21 @@
     }
 
     &.sbmt {
-        width: 16.8rem;
+        max-width: 17.5rem;
+        height: 4.8rem;
         background-color: var(--white);
         border: 0.1rem solid var(--san-juan-blue);
         color: var(--san-juan-blue);
         padding-inline: 2.8rem;
+        padding-top: 1.6rem;
+        padding-bottom: 1.4rem;
+        letter-spacing: -0.012rem;
+        text-align: left;
+        &:hover {
+            background-color:var(--san-juan-blue);
+            color: var(--water-white);
+            
+        }
     }
 
     &.black-btn {

@@ -1,0 +1,121 @@
+@use '../../util'as *;
+
+.pricing {
+    grid-template-columns: 1fr;
+    place-content: center;
+    padding-inline: 2.4rem;
+    padding-bottom: 4.8rem;
+        @include breakpoint-up(tablet){
+            grid-template-columns:1fr 1fr 1fr;
+            column-gap: 1rem;
+            padding-inline: 4rem;
+            align-items: flex-end;
+            padding-bottom: 9.6remrem;
+        }
+        @include breakpoint-up(desktop){
+            column-gap:2vw;
+            text-align: left;
+            padding-inline: 16.5rem;
+            padding-bottom: 10rem;
+        }
+
+    // &__fre-text{
+    //     @include breakpoint-up(tablet){
+    //         text-align: left;
+        
+    // }    
+
+    &__free-heading{
+        text-align: center;
+        color: var(--dark-pink);
+        font-weight: normal;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+        letter-spacing: -0.018rem;
+        padding-top: 4.8rem;
+        padding-bottom: 8.1rem;
+        @include breakpoint-up(tablet){
+            line-height: 4rem;  
+            padding-bottom: 1.3rem;    
+        }
+        @include breakpoint-up(desktop){
+            font-size: 3.2rem;
+            letter-spacing:-0.025rem;
+            text-align: left;
+            padding-top: 7.2rem;
+        }
+    }
+
+    &__free-paragraph {
+        padding-bottom: 1.9rem;
+        // @include breakpoint-up(tablet){
+        //     max-width: 35rem;  
+        // }
+    }
+
+    &__free-number{
+        font-family: var(--font-headings);
+        font-size:5.6rem;
+        line-height: 7.2rem;
+        letter-spacing: -0.043rem;
+        color: var(--san-juan-blue);
+    }
+    .centered {
+        place-content: center;
+        @include breakpoint-up(desktop){
+            place-content: unset;
+        }
+    }
+
+    &__list {
+       
+       display: flex;
+       flex-direction: column;
+       align-items:baseline;  
+       min-width: 14rem;
+       
+    }
+
+    &__item {
+        color: var(--san-juan-blue);
+        font-size: 1.6rem;
+        line-height: 2.8rem;  
+        opacity: 0.5;  
+       
+        &::before {
+            content:  url("../assets/shared/desktop/icon-check.svg");
+            padding-right: 2.4rem;
+            opacity: 0.01; 
+            display:inline-block;
+        }
+    }
+
+    &__item--active{
+        opacity: unset;
+        text-align: left;
+        &::before {
+            content: url("../assets/shared/desktop/icon-check.svg");
+            padding-right: 2.4rem;
+            opacity:unset;
+        }
+    }
+      
+    &__wrap {
+        padding-inline: 2.4rem;
+    }
+
+    &__btn {
+        padding-inline: 80rem;
+        margin-top: 2.4rem;
+    }
+
+    .divider{
+    
+        color: var(--color-text);
+        border-top: 0.3rem;
+        margin-block: 2.4rem;
+    }
+
+
+
+}
