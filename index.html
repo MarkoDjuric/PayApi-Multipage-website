@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -9,9 +10,10 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans&display=swap" rel="stylesheet">
 		<!--External Links-->
-		<link rel="stylesheet" href="/dist/style.css"/>
+		<link rel="stylesheet" href="/dist/style.css" />
 		<script defer src="/dist/script.js"></script>
-	</head>
+		<script src="https://unpkg.com/scrollreveal"></script>
+
 	<body>
 		<!-- Header -->
 		<header class="header container flex">
@@ -49,7 +51,7 @@
 						<input type="email" name="" id="" class="mailfld" type="email" placeholder="Enter email address">
 						<button class="btn schld dwnmob" type="submit">Schedule Demo</button>
 					</form>
-					<p class="question">Have any questions ? <span class="contact">Contact Us</span></p>
+					<p class="question">Have any questions ? <span class="contactus">Contact Us</span></p>
 				</div>
 		</div>
 		<main>
@@ -57,7 +59,7 @@
 		<section class="companies container m-btm">
 			<div class="companies__wrap grid">
 				<div class="partners grid">
-				 <img src="assets/shared/desktop/tesla.svg" class="change-my-color" alt="tesla-logo">
+				   <img src="assets/shared/desktop/tesla.svg" class="change-my-color" alt="tesla-logo">
 					<img src="assets/shared/desktop/microsoft.svg" class="change-my-color" alt="microsoft-logo">
 					<img src="assets/shared/desktop/hewlett-packard.svg" class="change-my-color" alt="packard-logo">
 					<img src="assets/shared/desktop/oracle.svg"class="change-my-color" alt="oracle-logo">
@@ -94,7 +96,7 @@
 		<!-- Banners section -->
 		<section class="banners container grid m-btm">
 			<div class="financies banner-grid grid">
-                <img src="assets/home/desktop/icon-personal-finances.svg" alt="Personal Finances icon" class="banner_img">
+                <img src="assets/home/desktop/icon-personal-finances.svg" alt="Personal Finances icon" class="banner_img" id="bnrimg">
 				<h3 class="banner_heading">Personal Finances</h3>
 				<p>Consolidate financial data from multiple sources and categorize transactions up to
 					2 years of history. Analyze reports to reconcile activities in your account.</p>
@@ -147,5 +149,12 @@
 			</div>
         </div>
 	</footer>
+	<script>
+		ScrollReveal({ reset: true,
+		distance:'6rem',
+	duration:2000,
+delay:300 });
+		ScrollReveal().reveal('.banner-heading',{delay:900,origin:'left'});
+	</script>
 	</body>
 </html>
