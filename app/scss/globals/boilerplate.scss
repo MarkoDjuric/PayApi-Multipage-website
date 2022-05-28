@@ -1,0 +1,95 @@
+@use '../util' as *;
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding:0;
+  overflow-x: hidden; 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ body {
+   max-width: 190rem;
+   margin: 0 auto;
+   position: relative;
+   height: 100%;
+  //  width:100vw;
+   touch-action: pan-y;
+   font-family: var(--font-text);
+   color: var(--color-text);
+   font-weight: 400;
+   text-align: center;
+   background-color: var(--bckground);
+   overflow-x: hidden;
+   min-height: 100vh;
+  //  right: -13vw;\
+ }
+//  body >*{
+//   padding: 0.9vw;
+//  }
+
+/* by default, buttons and inputs don't inherit typographical styles from their parents.
+Instead, they have their own weird styles. */
+img, picture, video, canvas, svg {
+	max-width: 100%;
+  }
+
+  /* Instruct these elements to match the typography in their surrounding environment.*/
+  input, button, textarea, select {
+	font: inherit;
+  }
+  input:active {
+    
+    color: aliceblue;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+  }
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--san-juan-blue);
+  cursor: pointer;
+ 
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+ //Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+//  @media (prefers-reduced-motion: reduce) {
+//    html:focus-within {
+//       scroll-behavior: auto;
+//     }
+  
+//     *,
+//      *::before,
+//     *::after {
+//        animation-duration: 0.01ms !important;
+//        animation-iteration-count: 1 !important;
+//        transition-duration: 0.01ms !important;
+//        scroll-behavior: auto !important;
+//      }
+//    }
+

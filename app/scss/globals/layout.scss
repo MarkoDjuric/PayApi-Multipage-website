@@ -1,0 +1,42 @@
+
+@use '../util' as *;
+
+.container {
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+}
+	
+.grid {
+	display: grid;
+}
+
+
+.vissible {
+
+	 transform: translateX(17%)!important;	
+}
+
+.nav-btn {
+	@include breakpoint-down(vsmall){
+		width: 20rem!important;
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+
+	width: 25rem!important;
+	@include breakpoint-down(mobile){
+       max-width: 25.2rem!important;
+	}
+}
+
+// sections divider class
+.m-btm{
+  margin-bottom: 8rem;
+}
+
+
+

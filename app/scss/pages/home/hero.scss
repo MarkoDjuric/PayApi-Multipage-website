@@ -1,0 +1,130 @@
+@use '../../util'as *;
+
+.hero {
+    // width:100%;
+    // max-width: 111rem;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2.4rem;
+        @include breakpoint-up(tablet){
+            padding-inline: 4rem;
+        } 
+        @include breakpoint-up(mid){
+            
+            justify-content: space-between;
+        } 
+        @include breakpoint-up(desktop){
+            padding-inline: 16.5rem;
+        }
+           flex-direction: column;
+        @include breakpoint-up(tablet){
+            flex-direction: row-reverse;
+        }
+        @include breakpoint-up(desktop){
+         
+             justify-content: space-between;
+        }
+    
+    &__wrapp {
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+    }
+       
+    &_img {
+        margin-top:-2.4rem;
+        z-index: 111;
+        transform: translateX(7%);
+            @include breakpoint-up(desktop){
+                margin-top: 2.1rem;   
+            }
+    }
+
+    &__banner {     
+        grid-template-columns: minmax(15rem,54.6rem);
+        gap: 2.4rem;     
+            @include breakpoint-up(tablet){
+                text-align: left;           
+            }
+            @include breakpoint-up(desktop){
+                gap: 4rem;
+            }
+    }
+
+    .dwnmob {  
+        width: 100%;
+        max-width: 37rem;
+        // @include breakpoint-down(mobile){
+        //     width: unset;
+        //     font-size: 1.1rem;
+        // }
+        // @include breakpoint-up(tablet){
+        //        position: absolute;
+        //     width: unset;
+        // }
+    }
+
+        .mailfld {
+            width: 100%;
+            max-width: 37rem;
+            margin-bottom: 1.6rem;
+            box-shadow: 0.1rem 0.3rem 1rem 0.1rem rgb(55 84 109 / 25%);
+            @include breakpoint-down(mobile){
+              
+            padding-right: 0;
+            // width: unset;
+            font-size: 1.1rem;
+           
+            }
+            @include breakpoint-up(tablet){
+               position: relative;
+                width: unset;
+            }
+        }
+        
+        h1 {
+            text-align: center;
+            max-width: 54.6rem;
+            
+                @include breakpoint-up(tablet){      
+                    text-align: left;
+                    padding-top: 10rem;
+                }
+        }
+        .contactus {
+            color: var(--color-text);
+            font-weight: bold;
+        }
+
+        .submitemail {
+            position: relative;
+           
+            @include breakpoint-up(midsm){
+                display: flex;
+
+                .mailfld {
+                    width: 69%;         
+                }
+                .dwnmob {
+                    position: absolute;
+                    flex: 0;
+                    right: 16%;
+                    width: 31%;
+                }
+            }
+
+        }
+        .question {
+            @include breakpoint-up(tablet){
+            margin-top: -1.6rem;
+            padding-left: 2.7rem;
+            cursor: pointer;
+            }
+        }
+    }
+
+
+
+
+
+
+

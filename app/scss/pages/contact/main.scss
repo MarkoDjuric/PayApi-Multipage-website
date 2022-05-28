@@ -1,0 +1,159 @@
+@use '../../util'as *;
+
+.contact {
+
+
+    padding-inline: 2.4rem;
+    margin-bottom: 9.3rem;
+    
+    @include breakpoint-up(desktop){
+        padding-left: 16.5rem;
+    }
+
+    &__heading {
+        text-align: center;
+        font-weight: normal;
+        @include breakpoint-up(tablet){
+            padding-inline: 7.3rem;
+        }
+        @include breakpoint-up(mid){
+            text-align: left;
+            max-width: 28ch;
+            padding-left: 1.6rem;
+        }
+
+    }
+
+    &__wrapp {
+        padding-top: 1.6rem;
+        grid-template-columns: 1fr;
+        place-content: center;
+        row-gap: 8rem;
+        @include breakpoint-up(mid) {
+            grid-template-columns: 1fr 1fr;
+            column-gap: 8.4rem;
+        }
+        @include breakpoint-up(desktop){
+            grid-template-columns: 1fr 1.5fr;
+            column-gap:8.5rem;
+        }
+    }
+
+    &__form {
+        
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: -0.012rem;
+        @include breakpoint-up(tablet){
+            padding-inline: 13.7rem;   
+        }
+        @include breakpoint-up(mid){
+            padding-left: 1.6rem; 
+            padding-right: 0;  
+        }
+        @include breakpoint-up(desktop) {
+            max-width: 45rem;
+        }
+        .inpt {
+            border: 0;
+            border-bottom: 0.1rem solid var(--san-juan-blue);
+            color: var(--san-juan-blue);
+            background-color: unset;
+            padding-left: 2rem;
+            padding-bottom: 1.7rem;
+            padding-top: 2.4rem;
+            width: 100%;
+
+            &:focus {
+                outline: 0;
+                border-bottom: 0.2rem solid rgba(29, 24, 24, 0.73);
+            }
+        }
+
+        .chbox {
+            margin-block: 2.4rem;
+            text-align: left;
+            align-items: center;
+            position: relative;
+        }
+        .btbox {
+            text-align: left;
+        }
+
+        .chlab {
+            cursor: pointer;
+        }
+
+        .box {
+            position: absolute;
+            left: -0.2rem;
+            top:-0.5rem;
+             opacity: 0;
+            width: 2.7rem;
+            height: 3.7rem;
+        }
+
+        .chlab::before {
+            content: "\2714";
+            display: inline-block;
+            width: 2.4rem;
+            height: 2.4rem;
+            padding-inline: 0.5rem;
+            margin-right: 0.2rem;
+            vertical-align: bottom;
+            color: transparent;
+            cursor: pointer;
+            background-color: var(--color-text);
+        }
+        input[type=checkbox]:checked + label:before {
+            background-color:var(--dark-pink);
+            border-color: var(--dark-pink);
+            color: #fff;
+          }
+}
+
+    .company {
+
+        @include breakpoint-up(mid){
+            place-self: center;
+        }
+        @include breakpoint-up(desktop){
+            justify-self: baseline;
+        }
+        
+        &__heading {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+            letter-spacing: -0.018rem;
+            opacity: 0.75;
+            margin-bottom: 3.2rem;
+            @include breakpoint-up(mid){
+                max-width: 39ch;
+                text-align: left;
+            }
+            @include breakpoint-up(desktop) {
+                margin-bottom: 4rem;
+            }
+        }
+
+        &__wrap {
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            place-items: center;
+            row-gap:4.48rem;
+            column-gap:5.96rem;
+                @include breakpoint-up(tablet){
+                    grid-template-columns: repeat(3,1fr);             
+                    row-gap:5.5rem;
+                    column-gap:6.25rem;
+                    padding-inline: 11.3rem;
+                }
+                @include breakpoint-up(mid){
+                    padding-left: 0;
+                    padding-right: 1.6rem;
+                    place-self: center;
+                }
+        }
+    }
+
+}
